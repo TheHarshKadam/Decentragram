@@ -1,0 +1,378 @@
+{
+  "contractName": "Decentragram",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/harsh/decentragram/src/contracts/Decentragram.sol\":\"Decentragram\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/harsh/decentragram/src/contracts/Decentragram.sol\":{\"keccak256\":\"0xabd5a4a734a2addf7c36e8d56a81c4812247194a3e4166ef1110cb6d2afa26a3\",\"urls\":[\"bzz-raw://326e3ce63c2f7b333676a5fffcbb29d4e2a3959e7af73df172abb185130ad3f5\",\"dweb:/ipfs/QmYh6rwpCS9BHRytJosEW8zor2yzjhiAhuc82gGSaU5cJv\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600c81526020017f446563656e7472616772616d00000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b610186806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158202e123d96ba32e31cd8948f14bbac19ae6a0ade31d046fe839f22d9c39d2e6dc064736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158202e123d96ba32e31cd8948f14bbac19ae6a0ade31d046fe839f22d9c39d2e6dc064736f6c63430005100032",
+  "sourceMap": "27:90:0:-;;;78:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;27:90;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:90:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:90:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:90:0;;;;;;;;;;;;;;;;;;;78:35;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;78:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Decentragram {\r\n  // Code goes here...\r\n  string public name = \"Decentragram\";\r\n}",
+  "sourcePath": "C:/Users/harsh/decentragram/src/contracts/Decentragram.sol",
+  "ast": {
+    "absolutePath": "/C/Users/harsh/decentragram/src/contracts/Decentragram.sol",
+    "exportedSymbols": {
+      "Decentragram": [
+        5
+      ]
+    },
+    "id": 6,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 5,
+        "linearizedBaseContracts": [
+          5
+        ],
+        "name": "Decentragram",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 5,
+            "src": "78:35:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "78:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "446563656e7472616772616d",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "99:14:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_483de360be352324e6ef7d99538d13af105db358291902b3c5b002f6928fdebc",
+                "typeString": "literal_string \"Decentragram\""
+              },
+              "value": "Decentragram"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 6,
+        "src": "27:90:0"
+      }
+    ],
+    "src": "0:117:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/harsh/decentragram/src/contracts/Decentragram.sol",
+    "exportedSymbols": {
+      "Decentragram": [
+        5
+      ]
+    },
+    "id": 6,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 5,
+        "linearizedBaseContracts": [
+          5
+        ],
+        "name": "Decentragram",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 5,
+            "src": "78:35:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "78:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "446563656e7472616772616d",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "99:14:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_483de360be352324e6ef7d99538d13af105db358291902b3c5b002f6928fdebc",
+                "typeString": "literal_string \"Decentragram\""
+              },
+              "value": "Decentragram"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 6,
+        "src": "27:90:0"
+      }
+    ],
+    "src": "0:117:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3D42b4b2bD8131Cc605609F9FBE0B2Dc06b8569E",
+      "transactionHash": "0xbfe25e5288b131c37c835578c3ca40b1336ef7a558f5fe6782aff8b108400e86"
+    },
+    "1601608424760": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x15de95004A27bF677a9068FC7476cB04dD54a2e6",
+      "transactionHash": "0xc1f9399358505020b649981558e7df6aa9c7e71814736041a279463b6cb99f4d"
+    },
+    "1601616853749": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xfc9BEC67c0EB878884E3e0E5149786ba2f5ac1E6",
+      "transactionHash": "0x26d81e90a3807993257336d22d94e10ad781d28d84108eccfde52c77edea0e1c"
+    }
+  },
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2022-10-14T14:24:37.479Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
