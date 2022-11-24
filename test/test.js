@@ -32,6 +32,7 @@ contract('Decentragram', ([deployer, author, tipper]) => {
       result = await decentragram.uploadImage(hash, 'Image description', { from: author })
       imageCount = await decentragram.imageCount()
     })
+    
      it('creates images',async()=>{
       assert.equal(imageCount, 1)
       // console.log(result.logs[0].args)
