@@ -12,6 +12,9 @@ class Main extends Component {
               <p>&nbsp;</p>
               <h1 className="d-4">Edit this file in App.js!</h1>
                 
+
+
+
                 {/* Code ... */}
 
               <p>&nbsp;</p>
