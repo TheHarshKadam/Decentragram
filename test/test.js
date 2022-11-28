@@ -35,7 +35,9 @@ contract('Decentragram', ([deployer, author, tipper]) => {
     
      it('creates images',async()=>{
       assert.equal(imageCount, 1)
+       
       // console.log(result.logs[0].args)
+       
       const event = result.logs[0].args;
       assert.equal(event.id.toNumber(), imageCount.toNumber(), 'id is correct')
       assert.equal(event.hash, hash, 'Hash is correct')
