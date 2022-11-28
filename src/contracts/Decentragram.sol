@@ -13,6 +13,7 @@ contract Decentragram {
     uint tipAmount;
     address payable author;
   }
+  
   event ImageCreated(
     uint id,
     string hash,
@@ -20,6 +21,7 @@ contract Decentragram {
     uint tipAmount,
     address payable author
   );
+  
   function uploadImage(string memory _imgHash, string memory _description) public{
     require(bytes(_imgHash).length>0);
     require(bytes(_description).length>0);
