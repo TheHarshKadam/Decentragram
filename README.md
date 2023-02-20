@@ -26,6 +26,7 @@ A few resources to get you started if this is your first Blockchain project:
 - [Node.js - JavaScript backend environment](https://nodejs.org/en/download/) 
 - [React Native - To create Web/Mobile dApps](https://reactnative.dev/) 
 - [Solidity  - Programming language for constructing and designing smart contracts](https://docs.soliditylang.org/en/v0.8.9/installing-solidity.html)
+- [Metamask -  A decentralized wallet ](https://metamask.io/download/)
 
 ### NOTE
 - Frontend is not updated yet for better user experience
