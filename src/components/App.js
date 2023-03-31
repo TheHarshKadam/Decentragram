@@ -122,6 +122,7 @@ class App extends Component {
           ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
           : <Main
             // Code...
+            account={this.state.account}
             images={this.state.images}
             captureFile={this.captureFile}
             uploadImage={this.uploadImage}
