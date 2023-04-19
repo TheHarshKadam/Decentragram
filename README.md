@@ -5,7 +5,8 @@
 - The author (who is uploading the image) will have to pay some gas fees. 
 - This whole project is on Ethereum Blockchain
 
-<img src =  "https://user-images.githubusercontent.com/77354987/219971087-978bb506-a206-416e-bc80-5fc98fdea1c4.png" alt = "DEMO" width="880" height="480">
+<img src =  "https://user-images.githubusercontent.com/77354987/233149893-670cba5b-a030-4cd0-90b6-ce94cdb922b5.jpg" alt = "DEMO" width="930" height="680">
+
 
 ## About File Storage System - 
 
