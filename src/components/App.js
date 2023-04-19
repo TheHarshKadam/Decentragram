@@ -6,15 +6,16 @@ import Decentragram from '../abis/Decentragram.json'
 import Navbar from './Navbar'
 import Main from './Main'
 
+
 const ipfsClient = require('ipfs-http-client')
 const auth = 'Basic ' + Buffer.from("your-project-id:api-key").toString('base64');
+
 const ipfs = ipfsClient({
   host: 'ipfs.infura.io',
   port: 5001,
   protocol: 'https',
   headers: { authorization: auth }
 });
-
 
 class App extends Component {
 
@@ -44,7 +45,7 @@ class App extends Component {
     // Network ID
     const networkId = await web3.eth.net.getId()
     const networkData = Decentragram.networks[networkId]
-    if(networkData) {
+    if (networkData) {
       const decentragram = new web3.eth.Contract(Decentragram.abi, networkData.address)
       this.setState({ decentragram })
       const imagesCount = await decentragram.methods.imageCount().call()
@@ -54,13 +55,13 @@ class App extends Component {
         const image = await decentragram.methods.images(i).call()
         this.setState({
           images: [...this.state.images, image]
-        })
+        }) 
       }
       // Sort images. Show highest tipped images first
       this.setState({
-        images: this.state.images.sort((a,b) => b.tipAmount - a.tipAmount )
+        images: this.state.images.sort((a, b) => b.tipAmount - a.tipAmount)
       })
-      this.setState({ loading: false})
+      this.setState({ loading: false })
     } else {
       window.alert('Decentragram contract not deployed to detected network.')
     }
@@ -69,7 +70,7 @@ class App extends Component {
   captureFile = event => {
 
     event.preventDefault()
-    const file = event.target.files[0]
+    const file = event.target.files[0]      
     const reader = new window.FileReader()
     reader.readAsArrayBuffer(file)
 
@@ -85,7 +86,7 @@ class App extends Component {
     //adding file to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
       console.log('Ipfs result', result)
-      if(error) {
+      if (error) {
         console.error(error)
         return
       }
@@ -97,12 +98,14 @@ class App extends Component {
     })
   }
 
-  tipImageOwner = (id, tipAmount)=> {
+
+  tipImageOwner(id, tipAmount) {
     this.setState({ loading: true })
     this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
     })
   }
+
 
   constructor(props) {
     super(props)
@@ -112,23 +115,27 @@ class App extends Component {
       images: [],
       loading: true
     }
+
+    this.uploadImage = this.uploadImage.bind(this)
+    this.tipImageOwner = this.tipImageOwner.bind(this)
+    this.captureFile = this.captureFile.bind(this)
   }
+
 
   render() {
     return (
       <div>
         <Navbar account={this.state.account} />
-        { this.state.loading
+        {this.state.loading
           ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
           : <Main
-            // Code...
-            account={this.state.account}
+          account={this.state.account}
             images={this.state.images}
             captureFile={this.captureFile}
             uploadImage={this.uploadImage}
             tipImageOwner={this.tipImageOwner}
-            />
-          }
+          />
+        }
       </div>
     );
   }
