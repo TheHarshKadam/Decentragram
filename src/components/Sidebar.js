@@ -22,18 +22,24 @@ function Sidebar(props) {
         </div>
         <hr/>
         <div style={{marginTop:"20px"}}>
+            <a href='#' style={{textDecoration:"none"}}>
             <div className="row" >
                 <div className="col-1"><img src={ua} alt=""/></div>
                 <div className="col"><p style={{fontSize:"20px", color:"#3586C7"}} >Profile</p></div>
             </div>
+            </a>
+            <a href='#' style={{textDecoration:"none"}}>
             <div className="row" >
                 <div className="col-1"><img src={gu} alt=""/></div>
                 <div className="col"><p style={{fontSize:"20px", color:"#3586C7"}} >Community</p></div>
             </div>
+            </a>
+            <a href='#' style={{textDecoration:"none"}}>
             <div className="row" >
                 <div className="col-1"><img src={mg} alt=""/></div>
                 <div className="col"><p style={{fontSize:"20px", color:"#3586C7"}} >Settings</p></div>
             </div>
+            </a>
         </div>
     </div>
   )
